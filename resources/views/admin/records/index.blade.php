@@ -1,3 +1,9 @@
+@extends('layouts.template')
+
+
+@section('title', 'Records (Admin)')
+
+@section('main')
 <h1>Records</h1>
 
 <ul>
@@ -5,3 +11,4 @@
         <li>{{ $record }}</li>
     @endforeach
 </ul>
+@endsection
