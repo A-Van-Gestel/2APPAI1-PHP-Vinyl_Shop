@@ -13,3 +13,14 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
+
+// CSS Cache Busting
+mix.version();
+
+// Disables Pop-up when compiling new version
+mix.disableNotifications()
+
+mix.browserSync({
+    proxy: 'vinyl_shop.test',
+    port: 3000
+});
