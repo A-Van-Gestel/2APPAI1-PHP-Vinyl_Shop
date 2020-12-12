@@ -10903,16 +10903,3 @@ a.text-dark:focus {
   }
 }
 
-main {
-  min-height: 500px;
-}
-
-.cardShopMaster .card {
-  cursor: pointer;
-}
-
-.cardShopMaster .card .btn,
-.cardShopMaster form .btn {
-  display: none;
-}
-
