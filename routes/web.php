@@ -17,7 +17,8 @@ Route::view('/', 'home');
 Route::get('shop', 'ShopController@index');
 Route::get('shop_alt', 'ShopController@alt');
 Route::get('shop/{id}', 'ShopController@show');
-Route::view('contact-us', 'contact');
+Route::get('contact-us', 'ContactUsController@show');
+Route::post('contact-us', 'ContactUsController@sendEmail');
 Route::get('itunes', 'ItunesController@index');
 
 // New version with prefix and group
