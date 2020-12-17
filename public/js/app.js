@@ -37288,7 +37288,11 @@ $(function () {
     $(this).closest('.form-group').find('label').append('<sup class="text-danger mx-1">*</sup>');
   }); // Give Font Awesome Icons fixed width and add right margin
 
-  $('nav i.fas').addClass('fa-fw mr-1');
+  $('nav i.fas').addClass('fa-fw mr-1'); // Go back to the previous page
+
+  $('#back').click(function () {
+    window.history.back();
+  });
 });
 
 /***/ }),
