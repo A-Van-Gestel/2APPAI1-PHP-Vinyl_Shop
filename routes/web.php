@@ -35,5 +35,6 @@ Route::middleware(['auth'])->prefix('user')->group(function () {
 // New version with prefix and group
 Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::redirect('/', '/admin/records');
+    Route::resource('genres', 'Admin\GenreController');
     Route::get('records', 'Admin\RecordController@index');
 });
