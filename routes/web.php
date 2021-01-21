@@ -38,5 +38,5 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::resource('genres', 'Admin\GenreController');
     Route::get('genres2/qryGenres', 'Admin\Genre2Controller@qryGenres');
     Route::resource('genres2', 'Admin\Genre2Controller', ['parameters' => ['genres2' => 'genre']]);
-    Route::get('records', 'Admin\RecordController@index');
+    Route::resource('records', 'Admin\RecordController');
 });
